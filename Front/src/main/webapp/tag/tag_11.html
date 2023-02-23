@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<body>
+<h1>form 태그</h1>
+<hr>
+<!-- action 속성
+요청 데이터를 전달할 서버의 URL을 지정한다
+""로 비워두면 현재 보고있는 페이지 URL로 요청한다
+
+method 속성
+요청 데이터를 서버로 전달하는 방식을 지정한다
+get 또는 post를 적용할 수 있다 -->
+<form action = "" method= "get"> 
+
+<div>
+<label>
+아이디
+<input type= "text" name = "userid" id= "uid"  
+placeholder= "아이디를 입력하세요"  
+size = 15 
+maxlength="7"
+required = ""
+autocomplete = "on">
+</label>
+</div>
+
+<div>
+<label for = "upw">비밀번호 </label>
+<input type = "password" name="userpw" id="upw"
+placeholder = "비밀번호를 입력하세요"
+reqired = "">
+
+</div>
+
+
+<label for = "chk1">체크1</label>
+<input type = "checkbox" id = "chk1" name = "chk">
+|
+<label for = "chk2">체크2</label>
+<input type = "checkbox" id = "chk2" name = "chk" value= "A">
+|
+<label for = "chk2">체크2</label>
+<input type = "checkbox" id = "chk2" name = "chk" value= "B" checked = "checked">
+<hr>
+
+<label><input type = "radio" name = "gender" value="m"> 남성</label>
+<label><input type = "radio" name = "gender" value="f"> 여성</label>
+<hr>
+
+<!-- 일반 버튼 -->
+<!-- 주로 클릭을 감지하도록 작성 -->
+<!-- focus상태에서 space bar를 눌러도 click 처리 -->
+<input type = "button" value = "버튼">
+
+
+<input type = "button" value = "알림창" 
+onclick = "alert('알림! 클릭감지!')"
+onkeyup = "alert('keyup')">
+<hr>
+
+<!-- 초기화 -->
+<!-- 새로고침 없이 입력된 창들을 초기상태로 되돌림 -->
+<input type = "reset">
+<hr>
+<input type = "submit" value="로그인">
+
+<hr>
+
+
+<!-- 버튼 태그 -->
+<!-- 일반 버튼이 아닌 SUBMIT 버튼으로 만들어진다 -->
+<button> 버튼 </button>
+<button type="button" >  </button>
+
+<!-- 파일 업로드 -->
+<hr>
+<input type = "file" name="f_multi" multiple="multiple">
+<hr>
+<!-- HTML5 에서 추가된 기능 -->
+
+ 
+ <input type= "date" name="d">
+ <hr>
+ <input type= "time" name="t">
+</form>
+<input type= "color" name = "c">
+
+
+
+
+
+
+<!-- <input type = "text"> 
+서버로 전송할 데이터를 사용자가 입력할 수 있는 입력창 태그
+
+<input type = "submit">
+서버로 전송할 데이터를 전송하는 버튼 태그
+
+URL에는 서버의 경로 + 자원의 경로를 표현하고 있다.
+http://localhost:8088/tag/tag_11.html?data1=apple&data2=banana
+
+서버의 경로:  http://localhost:8088/tag/tag_11.html
+자원의 경로: ?data1=apple&data2=banana
+
+? 기호는 전달데이터(요청파라미터)의 시작을 알린다
+전달데이터는 쿼리스트링 형식으로 작성된다
+
+데이터 항목이름 = 데이터값
+여러 개의 데이터는 &로 구분한다  -->
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type = "text/css">
+label {
+/* 모든 label 태그에 CSS 스타일 적용 */
+ display : inline-block;
+ width : 80px;}
+</style>
+
+
+</head>
+<body>
+<h1> form 태그</h1>
+<h3>fieldset, legend </h3>
+<hr>
+
+<form action= "" method = "get">
+
+
+<fieldset style = "width : 250px;">
+	<legend> 사용자 정보 </legend>
+	<label for= "userid"> 아이디</label>
+	<input type = "text" name = "userid" id="userid">
+	
+	<br>
+	
+	<label for= "userpw"> 패스워드 </label>
+	<input type = "text" name = "userpw" id="userpw">
+</fieldset>
+
+<fieldset style = "width : 250px;">
+
+	<legend> 취미 </legend>
+	<label>
+	<input type = checkbox name = "hobby" value = "book">  독서	
+	</label>
+	<label>
+	<input type = checkbox name = "hobby" value = "book">  영화	
+	</label>	
+	<label>
+	<input type = checkbox name = "hobby" value = "book">  음악	
+	</label>
+	
+	</fieldset>
+	
+<br>
+
+<input type = submit value = 전송>
+
+
+
+
+
+
+
+</form>
+
+
+</body>
+</html>

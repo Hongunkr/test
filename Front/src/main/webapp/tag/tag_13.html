@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> Form 태그</h1>
+<h5> datalist, textarea, select</h5>
+<hr>
+<!-- datalist 태그는 화면에 보이지 않는다 -->
+
+<form action="" method="get">
+<datalist id= "fruits">
+<option value = "one"> 사과 </option>
+<option> 바나나 </option>
+</datalist>
+
+<label for = "month">
+<select name = "month" id= "month">
+	<option value = "0"> 선택 </option>
+	<option value= "one"> 1개월 </option>
+	<option value= "two"> 2개월 </option>
+	<option value= "three"> 3개월 </option>
+	<option value= "three"> 3개월 </option>
+	
+</select>
+</label>
+
+<textarea rows="5" cols="30" id = "content" placeholder = "본문을 입력하세요"> </textarea>
+
+<input list="fruits" name = "f" autocomplete= "on">
+
+<button> 제출</button>
+</form> 
+
+
+</body>
+</html>

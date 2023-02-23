@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+table{
+	border: 1px solid #ccc;
+	
+	
+	/* 내부정렬 */
+	text-align: center;
+	/* margin 적용 */
+	margin: 20px;
+	
+	/* 외부정렬 */
+	 margin : 0 auto; 
+}
+
+tr {
+   /* width, margin, padding, border는 화면에 적용되지 않는다. */
+   width: 10px;
+   margin: 15px;
+   padding: 50px;
+   border: 1px solid black;
+
+
+	/* height는 적용할 수 있다 */
+	/* 직접 크기를 지정하지 않으면 자식 요소의 높이만큼 같이 커진다 */
+	height: 100px;
+}
+
+th, td{
+/* 	width: 100px;
+	height: 110px; */
+	
+	/* width는 <table>적용값이 우선 적용*/
+	/* height는 콘텐츠의 최종 높이(총합) 우선 적용*/
+	
+	/* padding 적용 가능하다 */
+	padding : 5px;
+	
+	/* margin 적용 불가능 */
+	margin : 5px;
+}
+ 
+
+</style>
+</head>
+<body>
+
+<table border = "1">
+<tr>
+	<th> 1</th>
+	<th> 2</th>
+	<th> 3</th>
+</tr>
+<tr>
+	<th> 하나</th>
+	<th> 둘</th>
+	<th> 셋</th>
+</tr>
+<tr>
+	<th> 일</th>
+	<th> 이</th>
+	<th> 삼</th>
+</tr>
+
+
+</table>
+
+</body>
+</html>
